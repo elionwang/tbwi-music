@@ -5,5 +5,6 @@ module.exports = {
   $description[[$songInfo[title]]($songInfo[url])]
   $color[23eee2]
   $title[Now Playing]
-  $replaceText[$replaceText[$pruneMusic;true;];false;]`
+  $replaceText[$replaceText[$pruneMusic;true;];false;]
+  $deleteIn[$songInfo[duration]]`
 }

@@ -6,7 +6,8 @@ const keepAlive = require('./server.js');
 
 const bot = new aoijs.Bot({
 token: TOKEN, //Discord Bot Token
-prefix: PREFIX //Discord Bot Prefix
+prefix: PREFIX, //Discord Bot Prefix
+revertReading: true
 })
 bot.onMessage() //Allows to execute Commands
 

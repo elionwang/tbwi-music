@@ -4,7 +4,7 @@ const server = express();
 
 
 server.all('/', (req, res)=>{
-    res.send(`Bot status: \nonline`)
+    res.json({ 'status': 'online' })
 })
 function keepAlive(){
     server.listen(3000, ()=>{
