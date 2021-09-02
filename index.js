@@ -16,6 +16,12 @@ Name: "Value",
 Name2: "Value2"
 })
 
+bot.status({
+  text: "Music",
+  type: "LISTENING",
+  time: 12
+})
+
 bot.readyCommand({
     channel: "", //You can use this or not
     code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
