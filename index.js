@@ -9,11 +9,10 @@ token: TOKEN, //Discord Bot Token
 prefix: PREFIX, //Discord Bot Prefix
 revertReading: true
 })
-bot.onMessage() //Allows to execute Commands
 
 bot.variables({
-Name: "Value",
-Name2: "Value2"
+    tag: "",
+    name: ""
 })
 
 bot.status({
@@ -26,6 +25,8 @@ bot.readyCommand({
     channel: "", //You can use this or not
     code: `$log[Ready on $userTag[$clientID]]` //Example Ready on Client
 })
+
+bot.onMessage() //Allows to execute Commands
 
 bot.loadCommands(`./commands/`)
 
