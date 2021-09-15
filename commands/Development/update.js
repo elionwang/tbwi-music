@@ -2,7 +2,7 @@ module.exports = {
   name: 'update',
   description: 'Updatet alle commands.',
   usage: '_update',
-  category: 'Miscellaneous',
+  category: 'Development',
   code: `$updateCommands
   $author[$userTag[$clientID];https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif]
   $title[Commands Update]

@@ -1,6 +1,6 @@
 module.exports = [{
   name: 'loop',
-  description: 'Herhaalt het huidige nummer of de wachtrij',
+  description: 'Herhaalt het huidige nummer of de wachtrij.',
   usage: '_loop song | _loop queue',
   category: 'Music',
   code: `$if[$toLowercase[$message[1]]==song]
@@ -15,11 +15,13 @@ module.exports = [{
   $else
   $author[$userTag[$clientID];https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif]
   $title[Error $customEmoji[bs_stunned;861677703455703061]]
-  $description[Geef alsjeblieft aan wat je wil loopen. $customEmoji[bs_annoyed;861677703455703061] Bijv: \`_loop queue\` of \`_loop song\`]
+  $description[Geef alsjeblieft aan wat je wil loopen. $customEmoji[bs_annoyed;861677703455703061]]
+  $addField[Usage;\`$commandInfo[$commandName;usage]\`]
   $color[RED]
   $endif
   $addCmdReactions[$customEmoji[bs_$randomText[smile;bothered;laugh;sad;shocked;stunned;frenzied;angry;rage;annoyed;ecstatic;happy;speechless];861677703455703061]]
-  $onlyIf[$voiceID!=;{author:$userTag[$clientID]:https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif}{color:RED}{title:Error $customEmoji[bs_stunned;861677703455703061]}{description:Je zit niet in een voicechat. $customEmoji[bs_sad;861677703455703061]}]`
+  $onlyIf[$voiceID!=;{author:$userTag[$clientID]:https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif}{color:RED}{title:Error $customEmoji[bs_stunned;861677703455703061]}{description:Je zit niet in een voicechat. $customEmoji[bs_sad;861677703455703061]}]
+  $onlyIf[$getUserVar[$commandName]==1;{author:$userTag[$clientID]:https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif}{color:RED}{title:Error $customEmoji[bs_stunned;861677703455703061]}{description:Je hebt geen permission voor deze command $customEmoji[bs_bothered;861677703455703061].}]`
 }, {
   type: 'awaitedCommand',
   name: 'loopsong',

@@ -32,7 +32,7 @@ module.exports = [{
   code: `$editMessage[$message[1];{author:$userTag[$clientID]:https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif} {description:\`Help Command Pages:\`
   🎵 \`- Music(1)\`
   🎶 \`- Music(2)\`
-  $customEmoji[bs_grin;861677703455703061] \`- Miscellaneous\`} {color:23eee2}]`
+  $customEmoji[bs_grin;861677703455703061] \`- Miscellaneous & Development\`} {color:23eee2}]`
 }, {
   name: 'awaitReaction2',
   type: 'awaitedCommand',
@@ -44,7 +44,7 @@ module.exports = [{
 }, {
   name: 'awaitReaction4',
   type: 'awaitedCommand',
-  code: `$editMessage[$message[1];{author:$userTag[$clientID]:https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif} {title: $customEmoji[bs_grin;861677703455703061] \`- Miscellaneous\`} {description:\`_ping: $commandInfo[ping;description]\n_help: $commandInfo[help;description]\n_update: $commandInfo[update;description]\n_eval: $commandInfo[eval;description]\`} {color:23eee2} {footer: 🔄 - Home}]`
+  code: `$editMessage[$message[1];{author:$userTag[$clientID]:https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/logo.gif} {title: $customEmoji[bs_grin;861677703455703061] \`- Miscellaneous & Development\`} {description:\`_ping: $commandInfo[ping;description]\n_help: $commandInfo[help;description]\n_update: $commandInfo[update;description]\n_eval: $commandInfo[eval;description]\`} {color:23eee2} {footer: 🔄 - Home}]`
 }, {
   name: 'aliases',
   type: 'awaitedCommand',

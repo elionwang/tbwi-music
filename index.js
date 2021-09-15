@@ -11,12 +11,21 @@ revertReading: true
 })
 
 bot.variables({
-    tag: "",
-    name: ""
+    clear: "1",
+    lyrics: "1",
+    remove: "1",
+    volume: "1",
+    skip: "1",
+    queue: "1",
+    loop: "1",
+    resume: "1",
+    play: "1",
+    pause: "1",
+    jump: "1",
 })
 
 bot.status({
-  text: "Music",
+  text: "Music | https://docs.tbwimusic.ml",
   type: "LISTENING",
   time: 12
 })
