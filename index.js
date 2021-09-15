@@ -27,7 +27,10 @@ bot.variables({
 bot.status({
   text: "Music | https://docs.tbwimusic.ml",
   type: "LISTENING",
-  time: 12
+  time: 30,
+  text: "Lars Prijzen 🛐",
+  type: "PLAYING",
+  time: 30
 })
 
 bot.readyCommand({
